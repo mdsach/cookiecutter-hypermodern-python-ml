@@ -103,7 +103,7 @@ def main(owner: str, repository: str, token: str, tag: Optional[str]) -> None:
     """
     if tag is None:
         today = datetime.date.today()
-        tag = f"{today:%Y.%-m.%-d}"
+        tag = f"{today.year}.{today.month}.{today.day}"
 
     try:
         publish_release(

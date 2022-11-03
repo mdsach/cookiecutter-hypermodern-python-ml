@@ -5,6 +5,7 @@ from pathlib import Path
 import click
 import github3
 import datetime
+import platform
 
 
 def git(*args: str, **kwargs: Any) -> str:
@@ -141,7 +142,7 @@ def main(
 
     if tag is None:
         today = datetime.date.today()
-        tag = f"{today:%Y.%-m.%-d}"
+        tag = f"{today.year}.{today.month}.{today.day}"
 
     try:
         prepare_release(

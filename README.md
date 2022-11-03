@@ -33,7 +33,7 @@ This is an opinionated framework using an object-oriented approach to training a
 # Creating a new project
 
 ## Requirements
-Git, DVC (), Poetry (>=1.2.2), 
+Git, DVC (), Poetry (>=1.2.2),
 
 1. Create git repo
    1. Add LICENSE
