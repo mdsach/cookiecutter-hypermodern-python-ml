@@ -30,6 +30,49 @@
 # Introduction
 This is an opinionated framework using an object-oriented approach to training and deploying machine learning applications.
 
+<!-- features-begin -->
+
+- Packaging and dependency management with [Poetry]
+- Test automation with [Nox]
+- Linting with [pre-commit] and [Flake8]
+- Documentation with [Sphinx] and [MyST] using the [furo] theme
+- Automated release notes with [Release Drafter]
+- Code formatting with [Black]
+- Import sorting with [isort]
+- Testing with [pytest]
+- Code coverage with [Coverage.py]
+- Static type-checking with [mypy]
+- Runtime type-checking with [Typeguard]
+- Automated Python syntax upgrades with [pyupgrade]
+- Security audit with [Bandit] and [Safety]
+- Check documentation examples with [xdoctest]
+- Generate API documentation with [autodoc] and [napoleon]
+
+The template supports Python 3.9, and 3.10.
+
+[autodoc]: https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html
+[bandit]: https://github.com/PyCQA/bandit
+[black]: https://github.com/psf/black
+[coverage.py]: https://coverage.readthedocs.io/
+[flake8]: http://flake8.pycqa.org
+[furo]: https://pradyunsg.me/furo/
+[isort]: https://pycqa.github.io/isort/
+[mypy]: http://mypy-lang.org/
+[myst]: https://myst-parser.readthedocs.io/
+[napoleon]: https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html
+[nox]: https://nox.thea.codes/
+[poetry]: https://python-poetry.org/
+[pre-commit]: https://pre-commit.com/
+[pytest]: https://docs.pytest.org/en/latest/
+[pyupgrade]: https://github.com/asottile/pyupgrade
+[release drafter]: https://github.com/release-drafter/release-drafter
+[safety]: https://github.com/pyupio/safety
+[sphinx]: http://www.sphinx-doc.org/
+[typeguard]: https://github.com/agronholm/typeguard
+[xdoctest]: https://github.com/Erotemic/xdoctest
+
+<!-- features-end -->
+
 # Creating a new project
 
 ## Requirements
