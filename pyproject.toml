@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "cookiecutter-hypermodern-python-ml"
 version = "0.1.0"
-description = "Project template for deployable ML/AI applications"
+description = "Cookiecutter project template for deployable ML/AI applications."
 authors = ["Matthew Sach <78856091+mdsach@users.noreply.github.com>"]
 
 [tool.poetry.dependencies]
