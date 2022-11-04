@@ -38,7 +38,7 @@ repos:
         entry: isort
         require_serial: true
         language: system
-        types_or: [cython, pypi, python]
+        types_or: [cython, pyi, python]
         args: ["--filter-files"]
       - id: pyupgrade
         name: pyupgrade

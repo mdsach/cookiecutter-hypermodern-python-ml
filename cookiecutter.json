@@ -9,7 +9,7 @@
     "copyright_year": "{% now 'utc', '%Y' %}",
     "open_source_license": [
         "MIT license",
-        "BSD license",
+        "BSD-3-Clause license",
         "ISC license",
         "Apache Software License 2.0",
         "GNU General Public License v3",
