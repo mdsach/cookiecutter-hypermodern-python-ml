@@ -1,10 +1,12 @@
 """Nox sessions"""
 
-from pathlib import Path
 import shutil
+from pathlib import Path
 
 import nox
-from nox_poetry import session, Session
+from nox_poetry import Session
+from nox_poetry import session
+
 
 nox.options.sessions = ["docs"]
 owner = "mdsach"
@@ -38,7 +40,7 @@ def publish_release(session: Session) -> None:
 nox.options.sessions = ["linkcheck"]
 
 
-@nox.session
+@session
 def docs(session: Session) -> None:
     """Build the documentation."""
     args = session.posargs or ["-W", "-n", "docs", "docs/_build"]
@@ -50,7 +52,7 @@ def docs(session: Session) -> None:
     if builddir.exists():
         shutil.rmtree(builddir)
 
-    session.install("sphinx", "sphinx-autobuild", "myst-parser", "furo")
+    session.install("-r", "docs/requirements.txt")
 
     if session.interactive:
         session.run("sphinx-autobuild", *args)
@@ -58,28 +60,21 @@ def docs(session: Session) -> None:
         session.run("sphinx-build", *args)
 
 
-@nox.session
+@session
 def linkcheck(session: Session) -> None:
     """Build the documentation."""
-    args = session.posargs or [
-        "-b",
-        "linkcheck",
-        "-W",
-        "--keep-going",
-        "docs",
-        "docs/_build",
-    ]
+    args = session.posargs or ["-b", "linkcheck", "-W", "--keep-going", "docs", "docs/_build"]
 
     builddir = Path("docs", "_build")
     if builddir.exists():
         shutil.rmtree(builddir)
 
-    session.install("sphinx", "sphinx-autobuild", "myst-parser", "furo")
+    session.install("-r", "docs/requirements.txt")
 
     session.run("sphinx-build", *args)
 
 
-@nox.session(name="dependencies-table")
+@session(name="dependencies-table")
 def dependencies_table(session: Session) -> None:
     """Print the dependencies table."""
     session.install("tomli")
