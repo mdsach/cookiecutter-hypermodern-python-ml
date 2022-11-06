@@ -40,7 +40,7 @@ end-before: <!-- features-end -->
 ---
 ```
 
-[Cookiecutter]: https://github.com/audreyr/cookiecutter
+[cookiecutter]: https://github.com/audreyr/cookiecutter
 [hypermodern python cookiecutter]: https://github.com/cjolowicz/cookiecutter-hypermodern-python
 [claudio jolowicz]: https://github.com/cjolowicz
 [data science cookiecutter]: https://github.com/drivendata/cookiecutter-data-science

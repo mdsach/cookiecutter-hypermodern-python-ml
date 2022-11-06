@@ -1,24 +1,22 @@
 {
-    "author_name": "First Last",
-    "author_email": "first_last@email.com",
-    "project_name": "Project Name",
-    "project_description": "Project Description.",
-    "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
-    "package_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
-    "version": "0.1.0",
-    "copyright_year": "{% now 'utc', '%Y' %}",
-    "open_source_license": [
-        "MIT license",
-        "BSD-3-Clause license",
-        "ISC license",
-        "Apache Software License 2.0",
-        "GNU General Public License v3",
-        "Not open source"
-    ],
-    "version_control_system": [
-        "GitHub"
-    ],
-    "use_github_org": "y",
-    "github_org": "organisation-name",
-    "github_username": "first-last"
+  "author_name": "First Last",
+  "author_email": "first_last@email.com",
+  "project_name": "Project Name",
+  "project_description": "Project Description.",
+  "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+  "package_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+  "version": "0.1.0",
+  "copyright_year": "{% now 'utc', '%Y' %}",
+  "open_source_license": [
+    "MIT license",
+    "BSD-3-Clause license",
+    "ISC license",
+    "Apache Software License 2.0",
+    "GNU General Public License v3",
+    "Not open source"
+  ],
+  "version_control_system": ["GitHub"],
+  "use_github_org": "y",
+  "github_org": "organisation-name",
+  "github_username": "first-last"
 }

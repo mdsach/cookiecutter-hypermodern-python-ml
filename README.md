@@ -28,6 +28,7 @@
 <!-- badges-end -->
 
 # Introduction
+
 This is an opinionated framework using an object-oriented approach to training and deploying machine learning applications.
 
 <!-- features-begin -->
@@ -76,6 +77,7 @@ The template supports Python 3.9, and 3.10.
 # Creating a new project
 
 ## Requirements
+
 Git, DVC (), Poetry (>=1.2.2),
 
 1. Create git repo
@@ -85,15 +87,17 @@ Git, DVC (), Poetry (>=1.2.2),
 2. `poetry init`
    1. Add pyproject.toml
    2. Add <project_name> directory
-   3. Add <__init__.py> file to <project_name> directory
+   3. Add <**init**.py> file to <project_name> directory
 
 # Credits & Acknowledgements
 
 This [Cookiecutter](https://github.com/audreyr/cookiecutter) template is substantially based on work from previous authors:
-   - [cookiecutter-hypermodern-python](https://github.com/cjolowicz/cookiecutter-hypermodern-python) by [Claudio Jolowicz](https://github.com/cjolowicz)
-   - [cookiecutter-data-science](https://github.com/drivendata/cookiecutter-data-science) by [DrivenData](https://www.drivendata.org/)
+
+- [cookiecutter-hypermodern-python](https://github.com/cjolowicz/cookiecutter-hypermodern-python) by [Claudio Jolowicz](https://github.com/cjolowicz)
+- [cookiecutter-data-science](https://github.com/drivendata/cookiecutter-data-science) by [DrivenData](https://www.drivendata.org/)
 
 And inspired by ideas presented by the following authors:
-   - [cookiecutter-ml](https://github.com/jeannefukumaru/cookiecutter-ml) by [Jeanne Fukumaru](https://github.com/jeannefukumaru)
-   - [cookiecutter-pypackage](https://github.com/audreyfeldroy/cookiecutter-pypackage) by [Audrey Roy Greenfeld](https://github.com/audreyfeldroy)
-   - [cookiecutter-pypackage](https://github.com/briggySmalls/cookiecutter-pypackage) by [BriggySmalls](https://github.com/briggySmalls)
+
+- [cookiecutter-ml](https://github.com/jeannefukumaru/cookiecutter-ml) by [Jeanne Fukumaru](https://github.com/jeannefukumaru)
+- [cookiecutter-pypackage](https://github.com/audreyfeldroy/cookiecutter-pypackage) by [Audrey Roy Greenfeld](https://github.com/audreyfeldroy)
+- [cookiecutter-pypackage](https://github.com/briggySmalls/cookiecutter-pypackage) by [BriggySmalls](https://github.com/briggySmalls)

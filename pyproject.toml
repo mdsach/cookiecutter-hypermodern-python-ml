@@ -22,6 +22,11 @@ tomli = "^2.0.1"
 pre-commit-hooks = "^4.3.0"
 cutty = "^0.18.0"
 
+[tool.isort]
+profile = "black"
+force_single_line = true
+lines_after_imports = 2
+
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
