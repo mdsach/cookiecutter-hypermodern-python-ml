@@ -10,15 +10,9 @@ import pandas as pd
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import StandardScaler
 
-from {{cookiecutter.package_name}}.contracts.contract_transformer import (
-    ColumnTransformerContract,
-)
-from {{cookiecutter.package_name}}.contracts.contract_transformer import (
-    EstimatorContract,
-)
-from {{cookiecutter.package_name}}.contracts.contract_transformer import (
-    StandardScalerContract,
-)
+from {{cookiecutter.package_name}}.contracts.contract_transformer import ColumnTransformerContract
+from {{cookiecutter.package_name}}.contracts.contract_transformer import EstimatorContract
+from {{cookiecutter.package_name}}.contracts.contract_transformer import StandardScalerContract
 
 
 STANDARD_SCALER_PARAMS = EstimatorContract(
